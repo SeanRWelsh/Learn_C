@@ -5,18 +5,18 @@
 # Compiler flags:                                                                        #
 #    -g    -- Enable debugging                                                           #
 #    -Wall   -- Turn on all warnings                                                     #
-#    -lm   --links the math library                                                      #
 #                                                                                        #
 # Using @ at the start of an action tells Make not to print this action.                 #
 #   So, by using @echo instead of echo , we can see the result of echo (the variable's   #
 #   value being printed) but not the echo command itself.                                #
 ##########################################################################################
 
+
 all:
-	@echo "build, run, clean"
+	@echo "build, run clean"
 build:
-	gcc -g -Wall -ovolume_of_a_sphere volume_of_a_sphere.c -lm
+	gcc -g -Wall -operimeter_of_a_rectangle perimeter_of_a_rectangle.c
 run:
-	./volume_of_a_sphere
+	./perimeter_of_a_rectangle
 clean:
-	rm -f volume_of_a_sphere
+	rm -f perimeter_of_a_rectangle 
